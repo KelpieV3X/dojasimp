@@ -53,11 +53,11 @@ player.on('trackAdd', (queue, track) => {
 });
 
 player.on('botDisconnect', (queue) => {
-    queue.metadata.send('Someone from the audio channel Im connected to kicked me out, the whole playlist has been cleared! ❌');
+    queue.metadata.send('Alright who the FUCK kicked me out the channel');
 });
 
 player.on('queueEnd', (queue) => {
-    queue.metadata.send('All play queue finished, I think you can listen to some more music. ✅');
+    queue.metadata.send('All play queue finished, I think you can listen to some more music. ✅!');
 });
 
 const express = require("express");
