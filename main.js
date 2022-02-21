@@ -56,10 +56,6 @@ player.on('botDisconnect', (queue) => {
     queue.metadata.send('Someone from the audio channel Im connected to kicked me out, the whole playlist has been cleared! ❌');
 });
 
-player.on('channelEmpty', (queue) => {
-    queue.metadata.send('I left the audio channel because there is no one on my audio channel. ❌');
-});
-
 player.on('queueEnd', (queue) => {
     queue.metadata.send('All play queue finished, I think you can listen to some more music. ✅');
 });
